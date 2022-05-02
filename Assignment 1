@@ -1,0 +1,30 @@
+ASSIGNMENT 1
+Q1) 1. In the below elements which of them are values or an expression? Eg :-
+values can be integer or string and expressions will be mathematical
+operators.*-Expression 'hello' -Value-87.8 -Value--Expression/-Expression+-
+Expression6-Value
+Q2) a string is a value representing text a variable is a name that can refer 
+to any value quotes, double or single, (they mean the same, but can’t be 
+matched with each other) are used to create string literals, the quotes are 
+there to indicate that the text that they enclose is not code, it is a value.
+Q3) List: the list is used for storing multiple data items in a single variable.
+Integer: integer can store only numerical values.
+Float: float can store only floating values such as 233.33, 22.2, etc.
+Q4) Expression is made up of values, containers, and mathematical operators 
+(operands) e.g
+a = 2 + 3 and expressions are used to evaluate the values or represent the 
+result on the screen.
+Q5) Expression is made up of values, containers, and mathematical operators 
+(operands) and the statement is just like a command that a python interpreter 
+executes like print.
+Q6) bacon = 22
+bacon + 1
+Sol: it gives 23 as execution code
+Q7) spam' + 'spamspam'
+'spam' * 3
+sol: it will be the same
+Q8) because we can't start giving variable an integer name. if we, we should begin 
+with, a string-like alphabet name then integer. e100 or eggs100 is valid.
+Q9) str(), int(), float()
+Q10) because 99 is an integer it cannot be concatenated with strings, if we have 
+to concatenate it we need to do typecasting
