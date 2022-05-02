@@ -1,0 +1,27 @@
+
+Python Advance Assignment-1
+Q1. What is the purpose of Python's OOP?
+Ans- It aims to implement real-world entities like inheritance, polymorphisms, encapsulation, etc. in the 
+programming.
+Q2. Where does an inheritance search look for an attribute?
+Ans- The inheritance search is simply a search of the tree from bottom to top looking for the lowest occurrence 
+of an attribute name.
+Q3. How do you distinguish between a class object and an instance object?
+Ans- A class is the building block that leads to Object-Oriented Programming. It is a user-defined data type.
+An object is an instance of a class. All data members and member functions of the class can be accessed with 
+the help of objects.Instance object is also called as constructor whereas class object are normal objects of a 
+class.
+Q4. What makes the first argument in a class’s method function special?
+Ans- The object itself is passed as the first argument to the corresponding function.
+Q5. What is the purpose of the __init__ method?
+Ans:- "__init__" is a reseved method in python classes. It is called as a constructor in object oriented 
+terminology.
+Q6. What is the process for creating a class instance?
+Ans:- An object is an instance of a class. All data members and member functions of the class can be accessed 
+with the help of objects.
+Q7. What is the process for creating a class?
+Ans:- A class is the building block that leads to Object-Oriented Programming. It is a user-defined data type.
+Q8. How would you define the superclasses of a class?
+Ans:- The class from which a class inherits is called the parent or superclass. A class which inherits from a 
+superclass is called a subclass, also called heir class or child class. Superclasses are sometimes called ancestors 
+as well
