@@ -1,0 +1,83 @@
+ASSIGNMENT-2
+1.ANS:
+A Variable of the primitive data type boolean can have values: true and false(Boolean literals)
+Ex: a=True
+type (a)
+b=False
+type (b)
+2.Ans:
+1. and operator----> true if both are true
+2. or operator------> true if at least one is true
+3. not operaror-----> true only if false
+3.Ans:
+A
+B And Or
+Not A True True True True False
+True False False True False
+False True False True True
+False False False False True
+4.Ans:
+(5>4) and ( 3 == 5 )
+Ans:False
+not(5>4)
+Ans:False
+(5>4) or ( 3 == 5 )
+Ans:True
+not(5>4) or ( 3 == 5 )
+Ans:False
+(True and True) and (True == False)
+Ans:False
+(not False) or (not True)
+Ans:True
+5.Ans:
+—->Less than (<)
+—->Less than or equal to (<=)
+—->Greater than(>)
+—->Greater than or equal to (>=)
+—->Equal to (==)
+—->Not equal to(!=)
+6.Ans:
+The "=" is an assignment operator is used to assign value on the right of the variable on the left.
+The "==" operator check whether the two given operands are equal or not. If so, returns false.
+7.Ans:
+if spam == 10: #block1
+print('eggs')
+if spam > 5: #block2
+print('bacon')
+else: #block3
+print('ham')
+print ('spam')
+print('spam')
+8.Ans:
+spam=int(input())
+if (spam==1):
+print("Hello")
+elif(spam==2):
+print ("Howdy")
+else:
+print ("Greetings!")
+9.Ans:
+Ctrl+c
+Here ctrl+c works as cancel
+10.Ans:
+break and continue are flow control statements
+In a repetative control statements loop terminates while condition is false, for some cases we
+need to terminate our loop immediately for that we have to use break.
+In a repetative control statements continue is used for skip the current iteration and continue to
+the next iteration.
+11.Ans:
+In range(10) the initial value is 0 and iterates till 10-1 i.e 9, it's take default one step value for
+iteration.
+In range(0,10) this is as same as before the initial value is 0 and iterates till 10-1 i.e 9, its take
+default 1 step value for iteration.
+In range(0,10,1) the initial value is 0 and iterates step 1 value till 10-1 i.e 9.
+12.Ans:
+for i in range (1,11):
+print(i,end=" ")
+#while loop
+i=1
+while(i<=10):
+print(i,end=" ")
+i=i+1
+13.Ans:
+Spam.bacon()
