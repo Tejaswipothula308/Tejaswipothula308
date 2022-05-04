@@ -1,0 +1,39 @@
+Python Advance Assignment-2
+Q1. What is the relationship between classes and modules?
+Ans:- The difference between a class and a module in python is that a class is used to define a blueprint for a 
+given object, whereas a module is used to reuse a given piece of code inside another program.
+Q2. How do you make instances and classes?
+Ans- This would create first object of Employee class"
+emp1 = Employee("Zara", 2000)
+Class creation
+class ClassName:
+ 'Optional class documentation string'
+ class_suite
+Q3. Where and how should be class attributes created?
+Ans- Every Python class keeps following built-in class attributes.
+__dict__ − Dictionary containing the class's namespace.
+__doc__ − Class documentation string or none, if undefined.
+__name__ − Class name.
+__module__ − Module name in which the class is defined. This attribute is "__main__" in interactive mode.
+__bases__ − A possibly empty tuple containing the base classes, in the order of their occurrence in the base 
+class list.
+Q4. Where and how are instance attributes created?
+Ans- An instance attribute is a Python variable belonging to one, and only one, object. This variable is only 
+accessible in the scope of this object and it is defined inside the constructor function, __init__(self,..) of the 
+class.
+Q5. What does the term "self" in a Python class mean?
+Ansself represents the instance of the class. By using the “self” keyword we can access the attributes and methods of 
+the class in python. It binds the attributes with the given arguments.
+Q6. How does a Python class handle operator overloading?
+Ans- To perform operator overloading, Python provides some special function or magic function that is 
+automatically invoked when it is associated with that particular operator. For example, when we use + operator, 
+the magic method __add__ is automatically invoked in which the operation for + operator is defined.
+Q7. When do you consider allowing operator overloading of your classes?
+Ans- Operator Overloading means giving extended meaning beyond their predefined operational 
+meaning. For example operator + is used to add two integers as well as join two strings and merge 
+two lists. It is achievable because '+' operator is overloaded by int class and str class.
+Q8. What is the most popular form of operator overloading?
+Ans- A very popular and convenient example is the Addition (+) operator. It performs “Addition” on numbers 
+whereas it performs “Concatenation” on strings.
+Q9. What are the two most important concepts to grasp in order to comprehend Python OOP code?
+Ans- Inheritance and creation of instance of cl
