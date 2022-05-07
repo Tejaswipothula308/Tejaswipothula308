@@ -1,0 +1,104 @@
+
+
+
+
+Q1. What is the meaning of multiple inheritance?
+Ans.
+
+Inheritence means one class is deriving data from the single parent class but in case of multiple inheritance, a subclass is derived from more than one parent classes. Suppose A and B are the classes and class C is deriving data from A and B. We can say this is multiple inheritance.
+class parent_1:
+    pass
+
+class parent_2:
+    pass
+
+class child(parent_1, parent_2):
+    pass
+
+Q2. What is the concept of delegation?
+Ans.
+
+Lets say a is a object of parent class A and b is a object of child class B. Then b can use all the variables and methods of parent class A to perform the operations. This is known as delegation. Following is the example of delegation.
+
+class A:
+    def __init__(self,name,age):
+        self.name=name
+        self.age=age
+        
+    def f_a(self):
+        return 'this is class A'
+        
+class B(A):
+    def __init__(self,number,*args):
+        super(B,self).__init__(*args)
+        self.number=number
+
+a=A('shivansh',30)
+b=B(10,'TESHU',25)
+
+a.f_a()
+b.f_a()
+
+
+Q3. What is the concept of composition?
+Ans.
+
+Suppose there are multiple class say, class A, class B and class C and their respective objects are a,b and c. So when we are going to call the final class C and we wanted to utilise the items of the other previous classes A and B then we use their objects a and b when we create the final class object c by passing a and b into that.
+class A:
+    def __init__(self):
+        pass
+a=A()
+
+class B:
+    def __init__(self):
+        pass
+b=B()
+
+class C:
+    def __init__(selfo,bject_a,object_b):
+        pass
+c=C(a,b)
+
+
+
+Q4. What are bound methods and how do we use them?
+Ans.
+
+Function whcih is defined insid ethe class and take the instance of a class as its first argument is known as bound function. This is because it bounded by the class. It can only perfrom the operation by using the class object.
+
+# example of bound method
+
+class A:
+    def __init__(self):
+        pass
+
+    def func(self):
+        return 'hello world'
+    
+obj = A()
+
+obj.func
+
+<bound method A.func of <__main__.A object at 0x0000023858ED79C8>>
+
+Q5. What is the purpose of pseudoprivate attributes?
+Ans.
+
+When we create a class and put some attributes inside it, those can be used by us within the class. But it may happen that someone other than us can also be use the same attributes with similar name from outside or inside the class. So in that case there will be change in our program codes. This will change the entire meaning of that code. So in order to make it safe from other users we use double underscore ( ) as a notation for private attribues or methods So that others cannot use it and if they able to use it then they cannot be able to access it.
+
+It can be access with some special way
+class person:
+ 
+    def __init__(self, name):
+ 
+        self.name = name
+        self.__age = 18
+ 
+    def __detail(self):
+        return self.name,self.__age
+ 
+ 
+ob = person("priyanka")
+ob.name
+ob._person__age
+ob._person__detail()
