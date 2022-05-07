@@ -1,0 +1,44 @@
+Python Advance Assignment-6
+
+1. Name three things that exception processing is good for.
+Ans.
+1) We can raise our own exception in our own so so that it is easy to understand. However default exception can also happen.
+2) The readability of error is simple and nice.
+3) We can able to check the correct code and at which step there is a wrong code. We give exception in every step also to check its correctness
+4) We can logg the exceptions
+2. What happens to an exception if you don’t do anything special to handle it?
+Ans.
+If nothing special is doen to handle the exception then if code is not correctly then then the whole programm will not able able to proceesed further and in the display lon error description comes. Secondaly it is very dangrous also. Suppose there is a very crucial program written and if it gets failed and we havent written any special exception then no one can ever understand the issue and problem and he cannot tell the programm about the code
+3. How can your script recover from an exception?
+Ans.
+We use try and except block as a exception handling. If in a try bloack any exception occure, the will will correct it as soon as possible.
+4. Name two ways to trigger exceptions in your script.
+Ans.
+1) By using Exception keyword under try and except block. We can do mistake in try block and writing our own exception msg while printing.
+2) By using raise keyword we can give any exception by defining the kind of error we wanted to raise and then we can use to print it.
+Example is given below
+
+def x(n):
+    if n==6:
+        raise Exception('The error is',n)
+    else:
+        print('ok input')
+    
+a=x(6)
+
+5. Name two ways to specify actions to be run at termination time, whether an exception occurs or not.
+Ans.. 1) Using Finally block: This will get executed whether or not exception occur or dont occur.
+2) Uisng simple print statement outside the try and except block. Example is given below
+
+try:
+    a=5
+    b='5'
+    print(a/b)
+except:
+    print('Some error occurred.')
+finally:
+    print('This is finally block')
+print("Out of try except blocks.")
+Some error occurred.
+This is finally block
+Out of try except blocks.
